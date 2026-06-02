@@ -297,16 +297,15 @@ window.initHomeModule = function({ DB, showStatus, switchPage, refreshConversati
     document.querySelector('.app-main').style.display = '';
         const pageMap = {
             'chat': 'chat',
-'worldbook': 'worldbook',
-'datamanager': 'datamanager',
-'settings': 'settings',
-'reunion': 'reunion',
-'forum': 'forum',
-'guangguang': 'guangguang',
-'accounting': 'accounting',
-'diary': 'diary',
-'theme': 'theme',
-'sms': 'sms'
+            'worldbook': 'worldbook',
+            'datamanager': 'datamanager',
+            'settings': 'settings',
+            'reunion': 'reunion',
+            'forum': 'forum',
+            'guangguang': 'guangguang',
+            'accounting': 'accounting',
+            'diary': 'diary',
+            'theme': 'theme'
         };
         const pageId = pageMap[nav];
         if (pageId) {

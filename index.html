@@ -6244,7 +6244,7 @@
             }
 
             const DB_NAME = "CompanionDB_V18";
-            const DB_VERSION = 29;
+            const DB_VERSION = 30;
             let db = null;
             window.groupCollapsed = window.groupCollapsed || {};
 
@@ -6253,7 +6253,7 @@
 
     return new Promise((resolve) => {
         // 关键：不带版本号打开，永远不会 blocked
-        const req = indexedDB.open(DB_NAME);
+        const req = indexedDB.open(DB_NAME, DB_VERSION);
         
         req.onupgradeneeded = (e) => {
             const d = e.target.result;
